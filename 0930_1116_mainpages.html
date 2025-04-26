@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인 페이지</title>
+    <style>
+        body{
+            margin : 0;
+            height: 100vh;
+            width: 100%;
+            background-image: url(images/field_l.jpg);
+            background-repeat: no-repeat;
+            background-position: center; /*수평*/
+            background-attachment: fixed; /*수직*/
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center; /**/
+        }
+        .glass_effect{
+            background-color: hsla(189, 89%, 64%, 0.4);
+            color:black;
+            width:700px;
+            height: 400px;
+            padding:10px;
+            border-radius: 20px;
+            box-shadow: 5px 10px 20px hsla(0, 0%, 0%, 0.7); /*투명도*/
+            text-align: center;
+            backdrop-filter: blur(2px);
+        }
+        img{
+            width: 230px;
+        }
+    </style>
+</head>
+<body>
+    <div class="glass_effect">
+        <h1>Glass Effect</h1>
+        <h2>Mirim Jeon</h2>
+        <img src="images/dove_logo.svg" alt="dove_logo">
+    </div>
+</body>
+</html>

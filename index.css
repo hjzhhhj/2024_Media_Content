@@ -1,0 +1,147 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("images/sky1.png") no-repeat center center/cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.525);
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.home_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    height: 600px;
+    margin: auto;
+    border: 15px solid white;
+    padding: 30px;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.home_container main {
+    text-align: center;
+    flex: 1;
+}
+
+.home_container main .image img {
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.home_container main .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 간격을 20px로 설정 */
+    margin-top: 50px; /* 아이콘과 사진 간의 간격을 30px로 늘림 */
+}
+
+.home_container main .social-icons a img {
+    width: 40px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.home_container main .social-icons a img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.home_container .home {
+    flex: 1;
+    text-align: center;
+    padding-top: 50px; /* 텍스트와 홈 버튼 간의 간격을 늘림 */
+}
+
+.home_container .name h1 {
+    margin: 0;
+}
+
+.home_container .name .name1 {
+    font-size: 1.5rem; /* Hello! 크기 줄임 */
+    color: black;
+}
+
+.home_container .name .name2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4CAF50;
+}
+
+.home_container .list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.home_container .list li {
+    margin: 10px 0;
+}
+
+.home_container .list li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    width: 250px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    background: white;
+    padding: 15px 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.home_container .list li a:hover {
+    color: #4CAF50;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 홈 버튼 */
+.home-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    border-radius: 50%;  /* 원형 버튼 */
+}
+
+/* 홈 버튼 이미지 */
+.home-button img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 50%; /* 이미지가 원형으로 보이도록 */
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inherit_상속_02</title>
+    <style>
+       div{    /*div에 36px을 줬는데...! p태그도 바뀜...!! (상속) */
+        background-color: aqua;
+        display : flex;
+        justify-content: center;
+        align-items: center;
+        width : 300px;
+        height: 300px;
+        font-size: 36px;
+        border : 3px dashed red;
+       }
+       p{  /*단, p태그에서 정해지면 자기값으로 바뀜, border, display은 상속이 안된다.*/
+        font-size: 24px;
+        border : 1px solid blue;
+       }
+    </style>
+</head>
+<body>
+   <div>
+    <p>가운데 p태그</p>
+   </div>
+</body>
+</html>
